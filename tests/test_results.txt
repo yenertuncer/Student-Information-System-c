@@ -1,0 +1,52 @@
+=========================================
+   FULL SYSTEM TEST SUITE STARTING
+=========================================
+
+--- Running Student Module Tests ---
+[PASS] Student Added Successfully
+[PASS] List Head is not NULL
+Error: Student with ID 1001 already exists!
+[PASS] Prevent Duplicate ID
+[PASS] Student Found by ID
+[PASS] Student Deleted Successfully
+[PASS] List is Empty After Delete
+Memory for students cleared.
+
+--- Running Course Module Tests ---
+Success: Course 'Intro to C' added successfully!
+[PASS] Add Course Successfully
+[PASS] Find Course by Code
+Success: Course with ID 101 deleted.
+[PASS] Delete Course
+[PASS] List Empty after Delete
+Memory for courses cleared.
+
+--- Running Professor Module Tests ---
+Success: Professor 'John Nash' added successfully!
+[PASS] Add Professor
+[PASS] Find Professor by ID
+Memory for professors cleared.
+
+--- Running Integration Tests (Enrollment & Grade) ---
+Success: Course 'Coding' added successfully!
+[PASS] Prerequisite Check Passed (No prereqs)
+Success: Enrollment added successfully!
+[PASS] Student Enrolled Successfully
+[PASS] is_student_enrolled returns True
+Success: Grade added (90.00 -> AA)!
+[PASS] Grade Assigned
+[PASS] GPA Calculated > 0.0
+Memory for students cleared.
+Memory for courses cleared.
+Memory for enrollments cleared.
+Memory for grades cleared.
+
+=========================================
+TEST SUMMARY
+=========================================
+Total Tests: 17
+Passed:      17
+Failed:      0
+=========================================
+
+All tests were completed. Enter for exit...
