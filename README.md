@@ -2,7 +2,7 @@ Student Information System
 
 
 
-This is a console-based Student Information System developed in C for the CSE102 Term Project. The system allows management of students, courses, professors, enrollments, and grades with full data persistence using CSV files .
+This is a console-based Student Information System developed in C. The system allows management of students, courses, professors, enrollments, and grades with full data persistence using CSV files .
 
 
 
