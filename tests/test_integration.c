@@ -2,13 +2,13 @@
 void run_integration_tests() {
     printf("\n--- Running Integration Tests (Enrollment & Grade) ---\n");
 
-    // Tüm listeleri sýfýrdan oluþturuyoruz
+    // TÃ¼m listeleri sÄ±fÄ±rdan oluÅŸturuyoryz
     Student *s_head = NULL;
     Course *c_head = NULL;
     Enrollment *e_head = NULL;
     Grade *g_head = NULL;
 
-    // 1. Hazýrlýk: Öðrenci ve Ders Ekle
+    // 1. HazÄ±rlÄ±k: Ã–Ã°renci ve Ders Ekle
     Student s; s.id = 2024001; strcpy(s.first_name,"Test"); strcpy(s.last_name,"Stud");
     strcpy(s.email,"t@t.com"); strcpy(s.phone,"555"); s.enrollment_year=2024;
     strcpy(s.major,"CS"); s.gpa=0; s.next=NULL;
@@ -19,7 +19,7 @@ void run_integration_tests() {
     strcpy(c.prerequisites,""); c.next=NULL;
     add_course(&c_head, &c);
 
-    // 2. Test: Kayýt Olma (Enrollment)
+    // 2. Test: KayÄ±t Olma (Enrollment)
     Enrollment e; e.student_id = 2024001; e.course_id = 3001;
     e.professor_id = 0; strcpy(e.semester, "2024-FALL"); 
     strcpy(e.date, "2024-09-01"); strcpy(e.status, "Enrolled");
@@ -32,7 +32,7 @@ void run_integration_tests() {
     int res = add_enrollment(&e_head, &e);
     TEST_ASSERT(res == 1, "Student Enrolled Successfully");
 
-    // 3. Test: Çift Kayýt Engelleme
+    // 3. Test: Ã‡ift KayÄ±t Engelleme
     int is_enrolled = is_student_enrolled(e_head, 2024001, 3001);
     TEST_ASSERT(is_enrolled == 1, "is_student_enrolled returns True");
 
@@ -45,7 +45,7 @@ void run_integration_tests() {
     TEST_ASSERT(res == 1, "Grade Assigned");
 
     // 5. Test: GPA Hesaplama
-    // Grade eklendiði için GPA deðiþmeli (Þu an hesapla fonksiyonunu çaðýrýyoruz)
+    // Grade eklendiÄŸi iÃ§in GPA deÄŸiÅŸmeli (Ãžu an hesapla fonksiyonunu Ã§aÄŸÄ±rÄ±yoruz)
     float gpa = calculate_student_gpa(2024001, g_head, c_head);
     TEST_ASSERT(gpa > 0.0, "GPA Calculated > 0.0");
 
@@ -55,3 +55,4 @@ void run_integration_tests() {
     free_all_enrollments(&e_head);
     free_all_grades(&g_head);
 }
+
