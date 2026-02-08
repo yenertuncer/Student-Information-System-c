@@ -3,11 +3,11 @@
 
 #include <stdio.h>
 
-// Basit test sayacý
+// Basit test sayacÄ±
 int total_tests = 0;
 int passed_tests = 0;
 
-// Test Makrosu: Eðer koþul (condition) doðruysa PASS, deðilse FAIL yazar.
+// Test Makrosu: EÃ°er koÅŸul (condition) doÄŸruysa PASS, deÄŸilse FAIL yazar.
 #define TEST_ASSERT(condition, message) do { \
     total_tests++; \
     if (condition) { \
@@ -18,7 +18,7 @@ int passed_tests = 0;
     } \
 } while(0)
 
-// Sonuçlarý gösteren fonksiyon
+// SonuÃ§larÄ± gÃ¶steren fonksiyon
 void print_test_summary() {
     printf("\n=========================================\n");
     printf("TEST SUMMARY\n");
@@ -30,3 +30,4 @@ void print_test_summary() {
 }
 
 #endif
+
