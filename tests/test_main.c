@@ -1,11 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// --- TEST ARAÇLARI ---
+// --- TEST ARAÃ‡LARI ---
 #include "test_utils.h"
 
 // --- ANA PROJE DOSYALARI (UNITY BUILD) ---
-// Hepsini buraya dahil ediyoruz ki baðlama hatasý olmasýn.
+// Hepsini buraya dahil ediyoruz ki baÄŸlama hatasÄ± olmasÄ±n.
 #include "../src/utils.c"
 #include "../src/grade.c"
 #include "../src/course.c"
@@ -38,3 +38,4 @@ int main() {
 
     return 0;
 }
+
